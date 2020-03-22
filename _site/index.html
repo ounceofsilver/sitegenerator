@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" />
+<head>
+    <meta charset="UTF-8" />
+    <title>Site Generator</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="../assets/main.css" />
+    
+</head>
+<body>
+    <nav>
+    <h2><a href="/">Site Generator</a></h2>
+    <p>By An Ounce of Silver Technologies</p>
+</nav>
+    <div class="error hidden">
+    <p>Error: <span class="error-message"></span></p>
+</div>
+    <div class="content">
+    <h1>Personal Site Generator</h1>
+    <form action="http://3e3c05be.ngrok.io/" method="POST">
+        <label>
+            Full Name
+            <input type="text" name="name" required/>
+        </label>
+        <label>
+            Subtitle
+            <input type="text" name="subtitle" title="A sentence fragment that describes yourself." maxlength="51" required/>
+        </label>
+        <label>
+            Email
+            <input type="email" name="email" required/>
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+    <div class="credit">
+    <p>©2020 by <a href="https://www.anounceofsilver.com">An Ounce of Silver Technologies</a>.</p>
+</div>
+
+    <script src="../assets/main.js"></script>
+</body>
+</html>
